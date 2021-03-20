@@ -1,38 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Psalmist</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500&family=Manrope&family=Montserrat&family=Quicksand&family=Raleway&display=swap"
-        rel="stylesheet">
-</head>
-<body>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500&family=Manrope&family=Montserrat&family=Quicksand&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Fontawesome Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <nav>
-        <picture class="logo"></picture>
-        <a href="#">About</a>
-        <a href="#">Experiences</a>
-        <a href="@">Hobbies</a>
+      <picture class="logo"></picture>
+      <div class="links">
+        <a href="#about">About Me</a>
+        <a href="#footer">Contact</a>
+      </div>
     </nav>
 
     <header>
-        <div class="headerText">
-            <h1>Hi there</h1>
-            <p>
-                I'm David, a student offering Mathematical Science at the University of Ghana, Legon
-                and a frontend webdeveloper.
-            </p>
-            <p>
-                Here you can learn more about me and get to review me without having to meet me in person.
-            </p>
+      <div class="hero">
+        <div class="header-text">
+          <h1 class="bold-text biggest-text"><u>Hi </u>there,</h1>
+          <p>
+            I’m a Mathematical Science Student @ U.G. and <br />
+            a Front-end web developer
+          </p>
         </div>
-
-        <picture class="profileImg">
-
-        </picture>
+        <picture class="profile-img"> </picture>
+      </div>
+      <div class="attributes">
+        <p class="card">
+          <span class="emoji-big">🎈</span><br /><a href="#interests"
+            >Interests</a
+          >
+        </p>
+        <p class="card">
+          <span class="emoji-big">🎓</span><br /><a href="#education"
+            >Education</a
+          >
+        </p>
+        <p class="card">
+          <span class="emoji-big">🎯</span><br /><a href="#skills">Skills</a>
+        </p>
+      </div>
     </header>
 
-</body>
+    <section id="about">
+      <div class="col-left">
+        <h2 class="bigger-text"><u>My </u>Self 😏</h2>
+        <p>
+          In response to the name David Nyamekye Mainoo, I am a man of many
+          passions; Photography, the applications of Mathematics in computing,
+          music, art, and engineering concepts that have made our world today a
+          very interesting one to live in, especially in this day and age. In
+          short, I love to watch and learn how things are done and understand
+          why they work the way they do. This passion has followed me since
+          childhood as I can remember dismantling my brother’s tractor in hopes
+          of making a bigger and better one. While it is obvious that I failed
+          in doing so it did not stop my quest in finding out why I couldn’t do
+          it.<br />
+          <b class="bold-text read-more">Read more</b>
+        </p>
+      </div>
+      <div class="col-right" id="skills">
+        <div class="skill">
+          <span class="skill-name">Front-end Web Dev</span>
+          <div class="full-bar">
+            <div class="percentage-bar wd"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="skill-name">Graphic Design</span>
+          <div class="full-bar">
+            <div class="percentage-bar gd"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="skill-name">Human Relations</span>
+          <div class="full-bar">
+            <div class="percentage-bar hr"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span class="skill-name">Singing</span>
+          <div class="full-bar">
+            <div class="percentage-bar sing"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <div class="col-left">
+        <h2 class="bigger-text"><u>From Pre</u>sec-Legon</h2>
+        <ul class="course">
+          <li class="course-title">General Science</li>
+          <ul class="course-content">
+            <li>✨Elective Subjects</li>
+            <ul>
+              <li>✨Physics</li>
+              <li>✨Elective Mathematics</li>
+              <li>✨Chemistry</li>
+              <li>✨Biology</li>
+            </ul>
+            <li>✨Core Subjects</li>
+            <ul>
+              <li>✨Core Mathematics</li>
+              <li>✨English Language</li>
+              <li>✨Social Studies</li>
+              <li>✨Integrated Science</li>
+            </ul>
+          </ul>
+          <li>✨Robotics and Programming</li>
+        </ul>
+      </div>
+      <div class="col-right">
+        <h2 class="bigger-text">
+          <u>Currently </u>@ The University of Ghana...
+        </h2>
+        <ul class="course">
+          <li class="course-title">📐Mathematics</li>
+          <ul class="course-content">
+            <li>✨Algebra and Trig</li>
+            <li>✨Vectors and Geometry</li>
+          </ul>
+        </ul>
+        <ul class="course">
+          <li class="course-title">📶C omputer Science</li>
+          <ul class="course-content">
+            <li>✨Office Productivity Tools</li>
+            <li>✨Intro. to Computers</li>
+          </ul>
+        </ul>
+        <ul class="course">
+          <li class="course-title">📈Data Science</li>
+          <ul class="course-content">
+            <li>✨Data Visualisation</li>
+            <li>✨Statistical methods</li>
+          </ul>
+        </ul>
+      </div>
+    </section>
+
+    <section class="interests" id="interests">
+      <h2 class="bigger-text"><u>I ju</u>st love...</h2>
+      <ul class="interest">
+        <li>📚Reading; (Recents include)</li>
+        <ul>
+          <li>📗The creative selection</li>
+          <li>📙The Richest Man in Babylon</li>
+          <li>📒How Sucessful People Think</li>
+        </ul>
+      </ul>
+      <ul class="interest">
+        <li>🍒Learning new stuff...</li>
+        <ul>
+          <li>📢Sound Mixing</li>
+          <li>🎬Video Production</li>
+          <li>📎Data Structures and Algorithms</li>
+          <li>🎼Playing the piano by sight reading</li>
+          <li>🔖Etc</li>
+        </ul>
+      </ul>
+      <ul class="interest">
+        <li>🎶Music</li>
+        <ul>
+          <li>🎼Classical music</li>
+          <li>🎵Soul music</li>
+          <li>🎤Chorale songs - hymns, etc</li>
+          <li>🎧Contemporary gospel</li>
+        </ul>
+      </ul>
+    </section>
+
+    <footer id="footer">
+      <p>Inspired by Ali Abdal</p>
+      <p>&copy;The_Psalmist 2021</p>
+
+      <div class="contact">
+        <i class="fas fa-phone"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-google-plus-g"></i>
+      </div>
+    </footer>
+  </body>
 </html>

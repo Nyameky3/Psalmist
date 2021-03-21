@@ -281,6 +281,13 @@ footer > a:hover {
   .links > * + * {
     margin-left: 1.5rem;
   }
+  body {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+  }
+  .course-content {
+    margin-left: -5rem;
+  }
   .profile-img {
     width: 100%;
     margin-bottom: 5rem;

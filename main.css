@@ -7,7 +7,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-nav>a:hover {
+nav > a:hover {
   color: #001558;
   font-weight: bolder;
   border-bottom: 2px solid #001558;
@@ -217,15 +217,15 @@ header > * {
   margin: 0 auto;
   background-color: #f8f8f6;
 }
-#hidden>p {
+#hidden > p {
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 #hidden > #last-paragraph {
   margin-bottom: 2rem;
 }
-#hidden.active{
- transform: translate(-50%, -50%) scale(1);
+#hidden.active {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 /**Education **/
@@ -270,7 +270,7 @@ footer {
   font-size: 0.8rem;
   align-items: center;
 }
-footer>a:hover{
+footer > a:hover {
   border-bottom: 1px solid #efefef;
 }
 .contact > * + * {
@@ -281,9 +281,17 @@ footer>a:hover{
   * {
     flex-direction: column;
   }
+  .links > * + * {
+    margin-left: 1.5rem;
+  }
   .profile-img {
     width: 98%;
     margin-bottom: 8rem;
+    height: 100%;
+  }
+  #three,
+  #one {
+    right: 0;
   }
   .col-right {
     margin-top: 2rem;
@@ -291,6 +299,13 @@ footer>a:hover{
     padding-bottom: 0;
   }
   #about {
+    padding: 1 0rem;
     padding-bottom: 1rem;
+  }
+  .interest {
+    width: 100%;
+  }
+  #hidden {
+    width: 90%;
   }
 }

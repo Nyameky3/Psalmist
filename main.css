@@ -7,12 +7,19 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:hover {
+  color: #001558;
+  font-weight: bolder;
+  border-bottom: 2px solid #001558;
+}
 .biggest-text {
   font-size: 2.6rem;
+  color: #001558;
 }
 .bigger-text {
   display: inline-block;
   font-size: 1.6rem;
+  color: #001558;
   text-decoration-color: #2c344f;
   margin-bottom: 0.6rem;
 }
@@ -32,9 +39,10 @@ ul {
   list-style: none;
 }
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: #f9f9f9, 100%;
   font-size: 1.1rem;
+  font-weight: 400;
 }
 body > * {
   width: 60%;
@@ -74,11 +82,24 @@ header > * {
 }
 .profile-img {
   padding: 2.5rem 0;
-  width: 50%;
-  height: 14rem;
-  border-radius: 4px;
-  box-shadow: 0 0 28px 0.6rem rgba(138, 138, 138, 0.2);
+  width: 57%;
+  height: 16rem;
+  /* border-radius: 4px;
+  box-shadow: 0 0 28px 0.6rem rgba(138, 138, 138, 0.2); */
+  display: flex;
 }
+.profile-img img {
+  filter: blur(18px);
+  width: 100%;
+  border-radius: 2px;
+}
+.profile-img img:hover {
+  transform: scale(1.8);
+  z-index: 10;
+  filter: blur(0);
+  transition: 200ms ease-in-out;
+}
+
 .attributes {
   align-items: center;
   justify-content: space-around;
@@ -144,7 +165,56 @@ header > * {
 }
 .read-more {
   font-size: 0.9rem;
+  background-color: inherit;
+  border: none;
   color: #3b4463;
+  cursor: pointer;
+  padding: 0;
+}
+.read-more:hover {
+  font-size: 0.93rem;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 100ms ease-in-out;
+  pointer-events: none;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+#hidden {
+  border-radius: 5px;
+  padding: 2rem 8%;
+  border: 1px solid #2c344f;
+  height: 75vh;
+  overflow: auto;
+  scrollbar-width: thin;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 400ms ease-in-out;
+  z-index: 49;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #f8f8f6;
+}
+#hidden>p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+#hidden > #last-paragraph {
+  margin-bottom: 2rem;
+}
+#hidden.active{
+ transform: translate(-50%, -50%) scale(1);
 }
 
 /**Education **/
@@ -194,7 +264,7 @@ footer {
   margin-left: 1rem;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 45rem) {
   * {
     flex-direction: column;
   }

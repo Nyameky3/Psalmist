@@ -282,8 +282,8 @@ footer > a:hover {
     margin-left: 1.5rem;
   }
   .profile-img {
-    width: 98%;
-    margin-bottom: 8rem;
+    width: 100%;
+    margin-bottom: 5rem;
     height: 100%;
   }
   #three,
@@ -295,7 +295,6 @@ footer > a:hover {
     right: 0;
   }
   .profile-img img:hover {
-    position: relative;
     transform: scale(1);
   }
   .col-right {

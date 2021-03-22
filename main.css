@@ -38,7 +38,6 @@ ul {
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background: #f9f9f9, 100%;
   font-size: 1.1rem;
   font-weight: 400;
 }
@@ -59,7 +58,7 @@ nav {
   width: 100%;
   top: 0;
   background-color: #fff;
-  z-index: 20;
+  z-index: 10;
 }
 .links > * + * {
   margin-left: 3rem;
@@ -199,6 +198,7 @@ header > * {
   opacity: 0;
   transition: 100ms ease-in-out;
   pointer-events: none;
+  z-index: 20;
 }
 #overlay.active {
   opacity: 1;
@@ -232,7 +232,7 @@ header > * {
   transform: translate(-50%, -50%) scale(1);
 }
 #skills {
-  padding-top: 6rem;
+  padding: 6rem 0;
 }
 
 /**Education **/
@@ -277,7 +277,7 @@ footer {
   position: relative;
   width: 100%;
   justify-content: space-between;
-  padding: 1rem 20%;
+  padding: 2rem 20%;
   font-size: 0.8rem;
   align-items: center;
 }
@@ -327,7 +327,7 @@ footer > a:hover {
     padding-bottom: 0;
   }
   #about {
-    padding: 1 0rem;
+    padding: 7rem 0rem;
     padding-bottom: 1rem;
   }
   .interest {
@@ -338,5 +338,9 @@ footer > a:hover {
   }
   .contacts {
     padding: 2rem 2rem;
+  }
+  .skills {
+    padding: 0 0;
+    height: 70%;
   }
 }
